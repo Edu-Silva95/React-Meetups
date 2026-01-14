@@ -8,7 +8,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -20,6 +19,22 @@ h4,
 h5,
 h6 {
   font-family: "Lato", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  max-width: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Mobile responsiveness */
