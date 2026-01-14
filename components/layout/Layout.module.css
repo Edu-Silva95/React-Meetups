@@ -2,11 +2,13 @@
   margin: 3rem auto;
   width: 90%;
   max-width: 40rem;
+  text-align: center;
 }
 
 .background {
   background-color: #77002e43;
   min-height: 100vh;
+  width: 100%;
 }
 
 /* Mobile responsiveness */
