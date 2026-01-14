@@ -22,7 +22,7 @@
 
 .content h3 {
   font-size: 1.25rem;
-  color: #2c292b;
+  color: #6c0029;
 }
 
 .actions {
@@ -43,4 +43,56 @@
 .actions button:hover,
 .actions button:active {
   background-color: #ffe2ed;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .image {
+    height: 15rem;
+  }
+
+  .content h3 {
+    font-size: 1.1rem;
+  }
+
+  .content p {
+    font-size: 0.95rem;
+  }
+
+  .actions button {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+    margin: 0.8rem 0;
+  }
+
+  .image {
+    height: 12rem;
+  }
+
+  .content {
+    padding: 0.8rem;
+  }
+
+  .content h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .content p {
+    font-size: 0.85rem;
+  }
+
+  .actions {
+    padding: 1rem;
+  }
+
+  .actions button {
+    padding: 0.35rem 0.8rem;
+    font-size: 0.8rem;
+  }
 }

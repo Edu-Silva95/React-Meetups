@@ -37,3 +37,41 @@
 .header a.active {
   color: white;
 }
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .header {
+    height: 4rem;
+    padding: 0 5%;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .header li {
+    margin-left: 1.5rem;
+  }
+
+  .header a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 3.5rem;
+    padding: 0 3%;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .header li {
+    margin-left: 0.8rem;
+  }
+
+  .header a {
+    font-size: 0.85rem;
+  }
+}

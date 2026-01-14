@@ -1,5 +1,23 @@
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #77002e;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #ffffffb3;
+}
+
 .form {
   padding: 1rem;
+  margin-top: 5rem;
+  border-radius: 5px;
 }
 
 .control {
@@ -17,9 +35,16 @@
   display: block;
   font: inherit;
   border-radius: 4px;
-  border: 1px solid #ccc;
+  border: 1px solid #77002e43;
   padding: 0.25rem;
   width: 100%;
+  background-color: #33333329;
+}
+
+.control input:focus,
+.control textarea:focus {
+  outline: #a50e48;
+  border-color: #a50e48;
 }
 
 .actions {
