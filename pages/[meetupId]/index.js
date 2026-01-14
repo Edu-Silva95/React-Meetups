@@ -34,13 +34,13 @@ export async function getStaticPaths() {
       paths: meetups.map((meetup) => ({
         params: { meetupId: meetup._id.toString() },
       })),
-      fallback: false,
+      fallback: 'blocking',
     };
   } catch (error) {
     console.error("Failed to fetch meetups detail page:", error);
     return {
       paths: [],
-      fallback: false,
+      fallback: 'blocking',
     };
   }
 }
@@ -68,6 +68,7 @@ export async function getStaticProps(context) {
       props: {
         meetupData: selectedMeetup,
       },
+      revalidate: 1,
     };
   } catch (error) {
     console.error("Failed to fetch meetups detail page:", error);
